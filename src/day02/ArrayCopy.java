@@ -19,7 +19,7 @@ public class ArrayCopy {
         String[] pets = {"멍멍이", "야옹이", "짹짹이"};
 //                stack   heap
 
-        // 변수를 만드는 상황 이외에는 new Type[] 붙여야함!
+        // 변수를 만드는 상황 이외에는 new Type[] 붙여야함!!!!!
 //        for (String p : new String[] {"야옹이", "냠냠이", "콩콩이"}) {}
 
 //        틀린 예제 : 배열 '주소'를 복사
