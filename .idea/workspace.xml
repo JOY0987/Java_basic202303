@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="10be36d2-2aeb-4379-9fc7-56fdc9bd4b96" name="Changes" comment="수업끝">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/Dancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/Dancer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/DancerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/DancerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <workItem from="1680048950060" duration="7413000" />
       <workItem from="1680104383392" duration="2128000" />
       <workItem from="1680134808390" duration="13086000" />
-      <workItem from="1680221323580" duration="12513000" />
+      <workItem from="1680221323580" duration="12762000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679881103654</created>
@@ -108,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680147692696</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="수업끝">
+      <created>1680234441590</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680234441590</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

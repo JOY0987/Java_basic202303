@@ -8,8 +8,8 @@ public class MemberRepository {
     public MemberRepository() {
         this.memberList = new Member[3]; // 3명을 만들어서 테스트
         memberList[0] = new Member("abc@def.com", "1234", 1, "콩벌레", Gender.MALE, 50);
-        memberList[1] = new Member("gggg@ddd.com", "9999", 2, "커비", Gender.FEMALE, 500);
-        memberList[2] = new Member("rrrr@home.com", "1111", 3, "별똥별", Gender.FEMALE, 20);
+        memberList[1] = new Member("ggg@ddd.com", "9999", 2, "커비잉", Gender.FEMALE, 500);
+        memberList[2] = new Member("rrr@hom.com", "1111", 3, "별똥별", Gender.FEMALE, 20);
     }
     
     /**
