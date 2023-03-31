@@ -24,7 +24,7 @@ public class DancerMain {
         System.out.println(park.introduce());
         System.out.println(jang.introduce());
 
-
+        // 주체에 따라서 행동이 달라지는 것이 객체지향 프로그래밍
         kim.dance();
         park.dance();
         jang.dance();
