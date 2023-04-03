@@ -1,6 +1,7 @@
 package day05.member;
 
 // 역할: 1명의 회원 정보를 묶어주는 역할
+// Java Bean (자바 커피콩) 이라고 부름 -> 콩들이 모여서 하나의 프로그램이 된다는 뜻!
 public class Member {
     
     String email;

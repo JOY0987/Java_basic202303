@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10be36d2-2aeb-4379-9fc7-56fdc9bd4b96" name="Changes" comment="수업끝">
+    <list default="true" id="10be36d2-2aeb-4379-9fc7-56fdc9bd4b96" name="Changes" comment="수업끝!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -77,7 +80,9 @@
       <workItem from="1680048950060" duration="7413000" />
       <workItem from="1680104383392" duration="2128000" />
       <workItem from="1680134808390" duration="13086000" />
-      <workItem from="1680221323580" duration="12762000" />
+      <workItem from="1680221323580" duration="12831000" />
+      <workItem from="1680479538951" duration="9568000" />
+      <workItem from="1680500477102" duration="9663000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679881103654</created>
@@ -114,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680234441590</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="수업끝!">
+      <created>1680234521210</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680234521210</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +148,8 @@
     <MESSAGE value="타입 캐스팅" />
     <MESSAGE value="0329 오전" />
     <MESSAGE value="수업끝" />
-    <option name="LAST_COMMIT_MESSAGE" value="수업끝" />
+    <MESSAGE value="수업끝!" />
+    <option name="LAST_COMMIT_MESSAGE" value="수업끝!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -47,6 +47,7 @@ public class MemberView {
                     stop();
                     break;
                 case "4":
+                    changePasswordViewProcess();
                     break;
                 case "5":
                     break;
@@ -65,6 +66,36 @@ public class MemberView {
             }
         }
     }
+
+
+    // 비밀번호 변경 입출력 처리
+    void changePasswordViewProcess() {
+
+        String email = input("# 수정할 대상의 이메일: ");
+
+        // 대상 탐색
+        Member foundMember = mr.findByEmail(email);
+
+        if (foundMember != null) {
+            // 수정 진행
+            System.out.printf("%s님의 비밀번호를 변경합니다!\n"
+                    , foundMember.memberName);
+            // 기존 비밀번호와 같으면 변경 취소
+            String newPassword = input("# 새로운 비밀번호: ");
+            if (foundMember.password.equals(newPassword)) {
+                System.out.println("# 기존 비밀번호와 같습니다!");
+                return;
+            }
+            mr.changePassword(email, newPassword);
+            System.out.println("\n# 비밀번호가 성공적으로 수정되었습니다.");
+
+        } else {
+            System.out.println("\n# 조회 결과가 없습니다.");
+        }
+        stop();
+    }
+
+
 
     String input(String message) {
         System.out.print(message);
@@ -121,7 +152,7 @@ public class MemberView {
         // 이메일 입력하세요!
         System.out.println("# 조회를 시작합니다!");
         String email = input("# 이메일: ");
-        Member foundMember = mr.findByEmail(email);
+        Member foundMember = mr.findByEmail(email); // 배열에서 값을 찾는건 View의 역할이 아니기에 저장소에 시킴
         // 찾은 회원의 정보 출력
         if (foundMember != null) {
             System.out.println("======= 조회 결과 ======");
@@ -131,6 +162,7 @@ public class MemberView {
             System.out.println("\n# 조회된 회원이 없습니다.");
         }
     }
+
 
 
 

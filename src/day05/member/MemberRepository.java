@@ -1,7 +1,10 @@
 package day05.member;
 
 // 역할: 회원 저장소 역할 (데이터베이스 같은 역할)
+// 입출력 역할 안함! 필요 외의 업무를 주면 튄다 ㅎ
 public class MemberRepository {
+
+    public static final int NOT_FOUND = -1;
 
     Member[] memberList;
 
@@ -79,4 +82,48 @@ public class MemberRepository {
         }
         return null;
     }
+
+    /**
+     * 이메일을 통해 저장된 회원의 인덱스 값을 알아내는 메서드
+     * @param email : 탐색 대상의 이메일
+     * @return : 찾아낸 인덱스, 못찾으면 -1 리턴
+     */
+    int findIndexByEmail(String email) {
+        for (int i = 0; i < memberList.length; i++) {
+            if (memberList[i].email.equals(email))
+                return i;
+        }
+        return NOT_FOUND;
+    }
+
+    /**
+     * 비밀번호 수정하는 기능
+     * 
+     * @param email : 수정 대상의 이메일
+     * @param newPassword : 변경할 새로운 비밀번호
+     */
+    boolean changePassword(String email, String newPassword) {
+        // 인덱스 탐색
+        int index = findIndexByEmail(email);
+
+        // 수정진행
+        if (index == NOT_FOUND) return false;
+//        if (findIndexByEmail(email) != NOT_FOUND) return false; -> 비효율적, 재활용이 필요한 코드
+
+        memberList[index].password = newPassword;
+        return true;
+    }
+    
+    void removeMember(String email) {
+        // 인덱스 찾기
+        int index = findIndexByEmail(email);
+
+        // 앞으로 뗑기기
+
+        for (int i = 0; i < memberList.length; i++) {
+
+        }
+        // 배열 마지막 칸 없애기
+    }
+
 }
