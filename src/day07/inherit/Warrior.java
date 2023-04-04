@@ -5,10 +5,6 @@ public class Warrior extends Player { // Warrior는 Player로 확장했다! (ext
 
     int rage; //분노 게이지
 
-    public Warrior() {
-        this("이름없음");
-    }
-
     public Warrior(String nickName) {
         super(nickName); // 부모의 생성자를 부르는 메서드가 무조건 숨어있다!
 //                          this()를 작성하면 부모 생성자를 사용할 수 없다.
@@ -30,7 +26,7 @@ public class Warrior extends Player { // Warrior는 Player로 확장했다! (ext
         System.out.println("# name : " + this.nickName);
         System.out.println("# level : " + this.level);
         System.out.println("# hp : " + this.hp);
-        => 슈퍼 클래스의 showStatus() 가 해주는 공통 부분
+        => 슈퍼 클래스의 showStatus() 가 해주는 공통부분
         */
         super.showStatus();
         System.out.println("# rage : " + this.rage);
