@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="10be36d2-2aeb-4379-9fc7-56fdc9bd4b96" name="Changes" comment="수업끝!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/inherit/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/inherit/Hunter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/inherit/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/inherit/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day07/inherit/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/inherit/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +83,7 @@
       <workItem from="1680479538951" duration="9568000" />
       <workItem from="1680500477102" duration="10420000" />
       <workItem from="1680567522397" duration="22184000" />
+      <workItem from="1680618729516" duration="4201000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679881103654</created>

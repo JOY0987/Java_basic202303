@@ -30,9 +30,10 @@ public class Warrior extends Player { // Warrior는 Player로 확장했다! (ext
         System.out.println("# name : " + this.nickName);
         System.out.println("# level : " + this.level);
         System.out.println("# hp : " + this.hp);
-        => 부모 클래스의 showStatus()
+        => 슈퍼 클래스의 showStatus() 가 해주는 공통 부분
         */
         super.showStatus();
         System.out.println("# rage : " + this.rage);
+        powerSlash();
     }
 }

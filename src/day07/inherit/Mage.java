@@ -17,10 +17,8 @@ public class Mage extends Player {
     // 오버라이딩
     @Override
     public void showStatus() {
-        System.out.println("\n========= Character's status =========");
-        System.out.println("# name : " + this.nickName);
-        System.out.println("# level : " + this.level);
-        System.out.println("# hp : " + this.hp);
+        super.showStatus();
         System.out.println("# mana : " + this.mana);
+        thunderBolt();
     }
 }

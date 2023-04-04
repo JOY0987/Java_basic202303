@@ -10,7 +10,7 @@ public class Hunter extends Player {
     }
 
     public void summonBeast() {
-        System.out.println("비스트를 사용합니다.");
+        System.out.println("비스트를 시전합니다.");
     }
 
     // 오버라이딩
@@ -18,10 +18,8 @@ public class Hunter extends Player {
 
     @Override
     public void showStatus() {
-        System.out.println("\n========= Character's status =========");
-        System.out.println("# name : " + this.nickName);
-        System.out.println("# level : " + this.level);
-        System.out.println("# hp : " + this.hp);
+        super.showStatus();
         System.out.println("# concentration : " + this.concentration);
+        summonBeast();
     }
 }
