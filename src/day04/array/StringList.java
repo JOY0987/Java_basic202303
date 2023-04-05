@@ -7,15 +7,15 @@ public class StringList {
     
     // 필드
     // foodList가 됐든, nameList가 됐든 모든게 sArr로 들어갈 것!
-    String[] sArr;
+    public String[] sArr;
     
     // 생성자
     // StringList가 생성됐을 때 sArr이 만들어져야함.
-    StringList() {
+    public StringList() {
         sArr = new String[0];
     }
     // 초기값 지정 가능한 생성자
-    StringList(String ... initData) {
+    public StringList(String ... initData) {
         sArr = new String[initData.length];
         for (int i = 0; i < sArr.length; i++) {
             sArr[i] = initData[i];
@@ -23,11 +23,11 @@ public class StringList {
     }
     // 메서드 (기능)
     // 배열에 저장된 데이터 수를 알려주는 기능
-    int size() {
+    public int size() {
         return sArr.length;
     }
     // 배열의 맨 끝에 데이터를 추가하는 기능
-    void push(String newData) {
+    public void push(String newData) {
         String[] temp = new String[sArr.length + 1];
         for (int i = 0; i < sArr.length; i++) {
             temp[i] = sArr[i];
@@ -36,7 +36,7 @@ public class StringList {
         sArr = temp; // 메서드가 끝나면 temp는 알아서 삭제
     }
     // 배열 맨 끝 데이터 삭제하는 기능
-    String pop() {
+    public String pop() {
         String deleteTarget = sArr[sArr.length - 1];
         String[] temp = new String[sArr.length - 1];
         for (int i = 0; i < temp.length; i++) {
@@ -50,11 +50,11 @@ public class StringList {
         return Arrays.toString(sArr);
     }
     // 배열이 텅텅 비었는지 확인
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return sArr.length == 0;
     }
     // 배열 데이터 전체삭제
-    void clear() {
+    public void clear() {
         sArr = new String[0];
     }
     
@@ -67,4 +67,10 @@ public class StringList {
     
     // 중간 삽입 (insert)
 
+
+
+    // 배열 얻기
+    public String[] getsArr() {
+        return sArr;
+    }
 }
