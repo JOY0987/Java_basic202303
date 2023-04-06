@@ -7,6 +7,7 @@ public class Book {
     private String author; // 저자명
     private String publisher; // 출판사명
 
+    // 대여 상태
     public Book() {
 
     }
@@ -18,26 +19,32 @@ public class Book {
     }
 
     public String getTitle() {
+
         return title;
     }
 
     public void setTitle(String title) {
+
         this.title = title;
     }
 
     public String getAuthor() {
+
         return author;
     }
 
     public void setAuthor(String author) {
+
         this.author = author;
     }
 
     public String getPublisher() {
+
         return publisher;
     }
 
     public void setPublisher(String publisher) {
+
         this.publisher = publisher;
     }
     
@@ -57,7 +64,7 @@ public class Book {
     }
 
     public String infoPlusAuthor() {
-        return String.format("%s, 저자: %s", this.info(), this.author); // this는 호출부의 this가 사용됨
+        return String.format("%s, 저자: %s", this.info(), this.author); // this 는 호출부의 this 가 사용됨
     }
 
 }

@@ -12,6 +12,7 @@ public class BookUser {
     private Book[] rentBookList; // 빌린 책 정보들
 
     public BookUser() {
+
     }
 
     public BookUser(String name, int age, Gender gender, int couponCount) {
@@ -22,14 +23,17 @@ public class BookUser {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public int getAge() {
+
         return age;
     }
 
@@ -42,14 +46,17 @@ public class BookUser {
     }
 
     public void setGender(Gender gender) {
+
         this.gender = gender;
     }
 
     public int getCouponCount() {
+
         return couponCount;
     }
 
     public void setCouponCount(int couponCount) {
+
         this.couponCount = couponCount;
     }
 

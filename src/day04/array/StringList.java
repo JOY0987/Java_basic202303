@@ -15,7 +15,7 @@ public class StringList {
         sArr = new String[0];
     }
     // 초기값 지정 가능한 생성자
-    public StringList(String ... initData) {
+    public StringList(String... initData) {
         sArr = new String[initData.length];
         for (int i = 0; i < sArr.length; i++) {
             sArr[i] = initData[i];
@@ -60,9 +60,19 @@ public class StringList {
     
     // 만들어보기
     // 인덱스 탐색 (indexOf)
-    
+    public int indexOf(String target) {
+        for (int i = 0; i < sArr.length; i++) {
+            if (target.equals(sArr[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     // 자료 유무 확인 (includes)
-    
+    public boolean includes(String target) {
+        return indexOf(target) != -1;
+    }
     // 중간 삭제 (remove)
     
     // 중간 삽입 (insert)
@@ -73,4 +83,6 @@ public class StringList {
     public String[] getsArr() {
         return sArr;
     }
+
+
 }

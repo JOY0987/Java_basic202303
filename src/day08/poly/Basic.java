@@ -9,7 +9,7 @@ class E extends C {}
 public class Basic {
 
     // 타입 캐스팅의 원리
-    // 자식 객체는 상속관계에 있는 상위 타입을 1사용할 수 있다.
+    // 자식 객체는 상속관계에 있는 상위 타입을 사용할 수 있다.
     Object x1 = new A();
     A x2 = new B();
     A x3 = new C();

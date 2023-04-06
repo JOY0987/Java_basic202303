@@ -27,6 +27,7 @@ public class Over {
     void alertType(int x, String y) {
 
     }
+    // 위와 순서가 다름. 이런 경우에도 다르게 인식!
     void alertType(String y, int x) {
 
     }

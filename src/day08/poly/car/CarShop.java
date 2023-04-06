@@ -32,7 +32,7 @@ public class CarShop {
                 new Tucson(),
         };
         
-        // 문자열과 정수와 논리를 배열에 담을 수 있는가?
+        // Object형 배열에는 문자열과 정수와 논리 등 모두 배열에 담을 수 있음
         Object[] oArr = {
                 50, 30, 3.3, "zzz", false, new Mustang()
         };
