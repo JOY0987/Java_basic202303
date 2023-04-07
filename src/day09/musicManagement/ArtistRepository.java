@@ -51,11 +51,7 @@ public class ArtistRepository {
     }
     // 특정 가수의 노래목록을 반환하는 기능
     public String[] getSongList(String artistName) {
-        Artist artist = findArtistByName(artistName);
-        if (artist != null) {
-            return artist.getSongList().getsArr();
-        }
-        return null;
+        return findArtistByName(artistName).getSongList().getsArr();
     }
     // 등록된 가수의 수 반환
     public int count() {

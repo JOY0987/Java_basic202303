@@ -1,5 +1,7 @@
 package day08.poly;
 
+import day09.musicManagement.Artist;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,9 +11,9 @@ public class Main {
         Computer com = new Computer();
 
         LgMonitor lgMonitor = new LgMonitor();
-        com.monitor = lgMonitor;
+        com.monitor = lgMonitor; // LgMonitor가 Computer의 자식객체이기 때문에 자동 형변환
         
         // 모니터 교환
-        com.monitor = new HpMonitor();
+        com.monitor = new HpMonitor(); // HpMonitor도 Computer의 자식객체이기 때문에 자동 형변환
     }
 }

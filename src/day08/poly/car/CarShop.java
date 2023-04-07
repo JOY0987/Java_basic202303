@@ -1,5 +1,7 @@
 package day08.poly.car;
 
+import java.util.Arrays;
+
 // 자동차 판매 대리점
 public class CarShop {
     Car[] cars;
@@ -31,8 +33,9 @@ public class CarShop {
                 new Stinger(),
                 new Tucson(),
         };
-        
-        // Object형 배열에는 문자열과 정수와 논리 등 모두 배열에 담을 수 있음
+
+        // Object 형 배열에는 문자열과 정수와 논리 등 모두 배열에 담을 수 있음
+        // 하지만 타입 safety 가 좋지 않으니 사용을 덜 하자..
         Object[] oArr = {
                 50, 30, 3.3, "zzz", false, new Mustang()
         };

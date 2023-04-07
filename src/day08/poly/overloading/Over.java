@@ -35,7 +35,7 @@ public class Over {
     // 사용자는 alertType의 기능만 알고 있으면 파라미터의 변화를 통해 여러 함수를 사용할 수 잇슴
     void test() {
         alertType("zzz", 10);
-        System.out.println(); // println도 오버로딩의 예
+        System.out.println(); // println 도 오버로딩의 예
     }
 
 }

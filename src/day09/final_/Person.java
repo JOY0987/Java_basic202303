@@ -25,7 +25,7 @@ class BagPack { // final class => 이미 완벽한 클래스니까 고치지마!
     }
 }
 
-class SmartBagPack extends BagPack {
+class SmartBagPack extends BagPack { // BackPack 이 final class인 경우 상속받기 불가!!
 
     public SmartBagPack(int size, String brand) {
         super(size, brand);
@@ -58,4 +58,5 @@ public class Person {
         this.ssn = ssn;
         this.bagPack = bagPack;
     }
+
 }
