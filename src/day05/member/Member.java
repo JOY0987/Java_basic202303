@@ -1,5 +1,7 @@
 package day05.member;
 
+import java.time.LocalDate;
+
 // 역할: 1명의 회원 정보를 묶어주는 역할
 // Java Bean (자바 커피콩) 이라고 부름 -> 콩들이 모여서 하나의 프로그램이 된다는 뜻!
 public class Member {
@@ -10,6 +12,9 @@ public class Member {
     String memberName;
     Gender gender;
     int age;
+
+    // 회원가입일
+    LocalDate regDate;
     
     // 생성자
     // 모든 필드를 초기화하는 생성자
@@ -25,7 +30,7 @@ public class Member {
     }
 
     // 회원정보를 문자열로 만들어서 리턴하는 기능(메서드)
-    String inform() {
+    public String inform() {
         String convertGender = (gender == Gender.MALE) ? "남성" : "여성";
         return String.format("# %d번 | %s | %s | %s | %d세"
                         , this.memberId, this.email, this.memberName

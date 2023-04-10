@@ -1,5 +1,9 @@
 package day05.member;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+
 // 역할: 회원 저장소 역할 (데이터베이스 같은 역할)
 // 입출력 역할 안함! 필요 외의 업무를 주면 튄다 ㅎ
 public class MemberRepository {
@@ -32,8 +36,7 @@ public class MemberRepository {
      * @return: 회원가입 성공 여부
      *          성공시 true, 이메일이 중복되어 실패시 false
      */
-    boolean addMember(Member newMember) { // 회원가입할 녀석의정보를 주면
-        // 멤버 리스트에 넣어줄게
+    boolean addMember(Member newMember) { // 회원가입할 녀석의정보를 주면 멤버 리스트에 넣어줄게
         // 이메일이 중복인가?
         if (isDuplicateEmail(newMember.email)) return false;
         
@@ -42,8 +45,29 @@ public class MemberRepository {
         for (int i = 0; i < memberList.length; i++) {
             temp[i] = memberList[i];
         }
+
+        // 회원가입 시간 등록
+        newMember.regDate = LocalDate.now();
+
         temp[temp.length - 1] = newMember;
         memberList = temp;
+
+        // save파일 생성 (옛날 방법)
+        try (FileWriter fw = new FileWriter("D:/exercise/member.txt")) {
+
+            String saveInfo = "";
+            saveInfo += newMember.memberId;
+            saveInfo += "," + newMember.email;
+            saveInfo += "," + newMember.memberName;
+            saveInfo += "," + newMember.password;
+            saveInfo += "," + newMember.gender;
+            saveInfo += "," + newMember.age;
+
+            fw.append(saveInfo + "\n");
+
+        } catch (IOException e) {
+            System.out.println("파일 저장 실패!");
+        }
 
         return true;
     }
