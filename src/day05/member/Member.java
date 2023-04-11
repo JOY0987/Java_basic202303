@@ -6,12 +6,12 @@ import java.time.LocalDate;
 // Java Bean (자바 커피콩) 이라고 부름 -> 콩들이 모여서 하나의 프로그램이 된다는 뜻!
 public class Member {
     
-    String email;
-    String password;
-    int memberId;
-    String memberName;
-    Gender gender;
-    int age;
+    public String email;
+    public String password;
+    public int memberId;
+    public String memberName;
+    public Gender gender;
+    public int age;
 
     // 회원가입일
     LocalDate regDate;
@@ -44,5 +44,6 @@ public class Member {
                 , this.memberName, this.password
                 , convertGender, this.age);
     }
+
 
 }

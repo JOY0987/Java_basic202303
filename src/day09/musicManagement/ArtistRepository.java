@@ -2,6 +2,8 @@ package day09.musicManagement;
 
 import day04.array.StringList;
 
+import java.io.*;
+
 public class ArtistRepository {
 
     private static Artist[] artistList; // 가수 배열
@@ -56,6 +58,30 @@ public class ArtistRepository {
     // 등록된 가수의 수 반환
     public int count() {
         return artistList.length;
+    }
+    
+    // 자동 세이브 기능
+    public void autoSave() {
+
+        File f = new File("D:/music");
+        if (!f.exists()) f.mkdir();
+
+        try (ObjectOutputStream oos
+                     = new ObjectOutputStream(
+                             new FileOutputStream("D:/music/m.sav")
+        )) {
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    // 자동 로드 기능
+    public void autoLoad() {
+
     }
 
 }
