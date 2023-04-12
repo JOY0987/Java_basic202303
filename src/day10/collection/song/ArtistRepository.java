@@ -54,5 +54,9 @@ public class ArtistRepository {
     public int count() {
         return artistList.size();
     }
+    
+    // 자동 세이브 기능
+    
+    // 자동 로드 기능
 
 }
