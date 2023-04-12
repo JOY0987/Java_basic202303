@@ -1,5 +1,6 @@
 package day12.lambda;
 
+import day05.member.Gender;
 import day05.member.Member;
 
 import java.util.List;
@@ -95,11 +96,11 @@ public class Main {
 
         // 회원 정보에서 회원의 닉네임만 추출
         List<Member> memberList = List.of(
-                new Member(1, "abc1@ddd.com", "1234", "홍길동", Gender.MALE, 33)
-                , new Member(2, "abc2@ddd.com", "4444", "김길동", Gender.FEMALE, 23)
-                , new Member(3, "abc3@ddd.com", "3333", "이길동", Gender.MALE, 43)
-                , new Member(4, "abc4@ddd.com", "5555", "박길동", Gender.FEMALE, 53)
-                , new Member(5, "abc5@ddd.com", "1111", "송길동", Gender.MALE, 63)
+                new Member("abc1@ddd.com", "1234", 1, "홍길동", Gender.MALE, 33)
+                , new Member("abc2@ddd.com", "4444", 2, "김길동", Gender.FEMALE, 23)
+                , new Member("abc3@ddd.com", "3333", 3, "이길동", Gender.MALE, 43)
+                , new Member("abc4@ddd.com", "5555", 4, "박길동", Gender.FEMALE, 53)
+                , new Member("abc5@ddd.com", "1111", 5, "송길동", Gender.MALE, 63)
         );
 
         List<Integer> nameList
